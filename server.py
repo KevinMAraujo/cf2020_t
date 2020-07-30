@@ -1,6 +1,6 @@
 import csv
 import time
-
+import os
 from flask import Flask
 from flask_restx import Api, Resource, fields, reqparse
 
@@ -183,5 +183,6 @@ class ProductWithID(Resource):
     def delete(self, id):
         return ProductDAO().delete(id)
 
-if __name__ == '__main__':
-	app.run()
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='127.0.0.1', port=port)
