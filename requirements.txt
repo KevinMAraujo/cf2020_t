@@ -1,4 +1,2 @@
-unicodecsv==0.14.1
-win32-setctime==1.0.1
 Flask==1.1.1
 flask-restx==0.2.0
