@@ -1,0 +1,6 @@
+﻿ID, NAME, CATEGORY
+0125551234800, Fabrica 1, Alimentos
+0125551234801, Fabrica 2, Pneus
+0125551234802, Fabrica 3, Plasticos
+0125551234803, Fabrica 4, Alimentos
+0125551234804, Fabrica 5, Alimentos
