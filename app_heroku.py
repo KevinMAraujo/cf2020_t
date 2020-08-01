@@ -1,3 +1,4 @@
+import gunicorn_config
 import csv
 import time
 import os
@@ -183,6 +184,5 @@ class ProductWithID(Resource):
     def delete(self, id):
         return ProductDAO().delete(id)
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.1', port=port)
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=gunicorn_config.PORT, debug=False)

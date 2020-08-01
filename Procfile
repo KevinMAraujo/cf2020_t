@@ -1,1 +1,1 @@
-web: python app_heroku.py
+web: gunicorn app_heroku:app --config=gunicorn_config.py

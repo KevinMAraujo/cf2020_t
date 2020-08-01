@@ -1,5 +1,6 @@
----
 applications:
- - name: cfcHackathon
-   random-route: true
-   memory: 128M
+- path: .
+  name: flask-test-102391209121
+  random-route: false
+  memory: 256M
+  instances: 1
