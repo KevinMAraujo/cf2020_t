@@ -66,7 +66,7 @@ class ProductDAO(object):
         if db_name in client.all_dbs():
             self.cir_db = client[db_name]
         else:
-            # Create the DB and immport the dummy data
+            # Create the DB and import the dummy data
             self.cir_db = client.create_database(db_name)
             self.import_data()
 
